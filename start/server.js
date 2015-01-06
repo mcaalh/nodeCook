@@ -28,6 +28,7 @@ function cacheAndDeliver (f, cb){
     });
 }
 
+
 var server = http.createServer(function(req, res){
     var lookup = path.basename (decodeURI(req.url)) || 'index.html';
     var f = 'content/' + lookup;
